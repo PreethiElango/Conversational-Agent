@@ -1,25 +1,25 @@
 {
 	"intents": [{
 			"tag": "EconomicalCars",
-			"patterns": ["tell me some car which are in my budget", "cheap Car","cheapest car","affordable", "low budget", "lower end cars", "low maintaince car", "low cost cars"],
+			"patterns": ["tell me some car which are in my budget", "cheap Car", "cheapest car", "affordable car", "low budget car", "lower end cars", "low maintaince car", "low cost cars", "economical cars"],
 			"responses": [" Nissan Versa Note", "Ford Fiesta", "Toyota Yaris", "Kia Rio", "Mitsubishi Mirage", " Chevrolet Spark"]
 		},
 		{
 			"tag": "TopCars",
-			"patterns": ["affordable luxury car", "Top cars","High class cars", "High end cars","expensive Cars"],
+			"patterns": ["affordable luxury car", "Top cars", "High class cars", "High end cars", "expensive Cars"],
 			"responses": ["Audi A3", "Audi Q3", "Acura TLX", "Acura RDX", "BMW XI", "BMW 2 Series", "Buick Encore"]
 		},
 		{
 			"tag": "PopularCars",
-			"patterns": ["what car I should buy", "which car to buy", "trending car", "different company of cars", "which is the latest car", "tell me some mileage cars", "what car I should buy", "tell me some good car names", "tell me some car companies name", "what is a good car for students", "good car for elders", "good car for womens","most famous cars","trending cars"],
+			"patterns": ["what car I should buy", "which car to buy", "trending car", "different company of cars", "which is the latest car", "tell me some mileage cars", "what car I should buy", "tell me some good car names", "tell me some car companies name", "what is a good car for students", "good car for elders", "good car for womens", "most famous cars", "trending cars"],
 			"responses": ["Toyota Corolla", "Ford F-Series", "Volkswagen Golf", "Volkswagen Beetle", " Ford Escort", "Volkswagen Arteon", "Audi A6", " BMW M6", "Hyundai Accent", "BMW M5"]
 		},
 		{
 			"tag": "Buy",
-			"patterns": ["how to buy a car","buy car","car specifications","car features"],
+			"patterns": ["how to buy a car", "buy car", "car specifications", "car features"],
 			"responses": ["First find your use case, then you budget and short list car company"]
 		},
-		
+
 		{
 			"tag": "SportsCar",
 			"patterns": ["sports car under", "sexy car", "Racing cars", "car for boys"],
@@ -32,8 +32,9 @@
 		},
 		{
 			"tag": "Yes",
-			"patterns": ["can I switch to synthetic oil", "Do you have a car that fits my need", "does car breaks", "does car have headlights", "should I buy a car", "do you have a car", "can boys drive car", "can men drive car", "can women drive car","does car have wheels","does car have engine",
-			"does runs on road","does car produces smoke","can 4 people sit in a car"],
+			"patterns": ["can I switch to synthetic oil", "Do you have a car that fits my need", "does car breaks", "does car have headlights", "should I buy a car", "do you have a car", "can boys drive car", "can men drive car", "can women drive car", "does car have wheels", "does car have engine",
+				"does runs on road", "does car produces smoke", "can 4 people sit in a car"
+			],
 			"responses": ["Yes"]
 		},
 		{
@@ -139,18 +140,18 @@
 		},
 		{
 			"tag": "Facts",
-			"patterns": ["who invented car", "when was car invented", "what is car", "facts about cars","car","cars"],
+			"patterns": ["who invented car", "when was car invented", "what is car", "facts about cars", "car", "cars"],
 			"responses": ["Karl Benz invented in 1885, car is a wheeled motor vehicle used for transportation"]
 		},
 		{
 			"tag": "ReadManual",
-			"patterns": ["how to accelerate a car", "how to remove the seat belt", "do we have to wear seat belt","brake", "how to apply the brake", "how to use wiper blades", "how to turn ac on", "turn ac off"],
+			"patterns": ["how to accelerate a car", "how to remove the seat belt", "do we have to wear seat belt", "brake", "how to apply the brake", "how to use wiper blades", "how to turn ac on", "turn ac off"],
 			"responses": ["Please read the manual"]
 		},
 		{
 			"tag": "CarNames",
-			"patterns": ["ford", "tesla", "BMW","Audi","jeep","Ferrari","Mustang","Honda","tata","Bugatta","dodge","toyata","volvo","Nissan","buick","chevrolet","chrysler","hyundai"],
-			"responses": ["It's a car company","car manufacturer","car maker"]
+			"patterns": ["ford", "tesla", "BMW", "Audi", "jeep", "Ferrari", "Mustang", "Honda", "tata", "Bugatta", "dodge", "toyata", "volvo", "Nissan", "buick", "chevrolet", "chrysler", "hyundai"],
+			"responses": ["It's a car company", "car manufacturer", "car maker"]
 		},
 		{
 			"tag": "TypesOfCar",
@@ -163,66 +164,80 @@
 			"responses": ["Hello!", "Good to see you!", "Hi there, how can I help?", "Hi!", "Good morning, Hope you are having a good day! How can i help?", "Good day to you."],
 			"context_set": ""
 		},
-		
-		
-		{"tag": "owner",
-         "patterns": ["who made you", "who is your owner", "who are your makers","who is your creater","who created you","manufactured","who built you"],
-         "responses": ["I am outcome of graduate final project", "Preeti and Shabbir made me"]
-        },
-        {"tag": "working",
-         "patterns": ["how are you able to answer", "how you work", "explain your working principle", "Mechanism of working","Principle of working","mode of exceution","ways of answering","what do you do","how do you talk","how you reply","how you response","your response time"],
-         "responses": ["I use neural network model","we do semantic parsing", "Bag of word vector representation","I am not rule based","Feedforward Neural Network","Compute intent then I answer"]
-        },
-        {"tag": "personal_info",
-         "patterns": ["how old are you", "what is your birth date","when your birthday comes", "what is your age", "age?","date of birth"],
-         "responses": ["I am younger than you", "Just now I took the birth","I am quite mature","I am computer program"]
-        },
-        {"tag": "talented",
-         "patterns": ["Are you talented", "How talented you are","what questions you can answer","you are expert in","you domain","your context",
-		 "you are tranied in"],
-         "responses": ["I am quite good with chatbot knowledge", "I have knowledge of NLP", "I have solid NLP background","you talk about chatbot with me"]
-        },
-        {"tag": "making",
-         "patterns": ["how to make chatbot","what are your parts","main components","constituents"],
-         "responses": ["NLP knowledge", "Sentence Parsing","Neural Network","Intent finding","Tensorflow library","Json parser","They coded me in python"]
-        },
-        {"tag": "Speak",
-         "patterns": ["In which language you can talk", "how you talk","how you speak","you speak in","which language you use", "medium of communication","mode of interaction","ways of talking","can you speak"],
-         "responses": ["English","Language which normal people speak","I usually prefer simple sentences as i am in beta version","I interact via console input"]
-        },
-        {"tag": "Name",
-         "patterns": ["what is your name","name","How to call you","what to call you","Hey I am","your name","who are you"],
-         "responses": ["Call me whatever you feel like","you can call be chatbot"]
-        },
-        {"tag": "information",
-         "patterns": ["where to get information about chatbot","what is chatbot","define chatbot","create chatbot"],
-         "responses": ["https://www.tensorflow.org/","http://www.natalieparde.com/teaching/cs421_fall2019.html","computer program to whom you can ask"]
-        }
-        ,
-        {"tag": "factsChatBot",
-         "patterns": ["who invented chatbot","First chatbot come in","chatbot","chat","bot","chatbot exits since","name of first chatbot","history of chatbot"],
-         "responses": ["Joseph Weizenbaum in 1960","MIT professor in 1960","ELIZA in 1960"]
-        }
-        ,
-        {"tag": "advantageChatBot",
-         "patterns": ["Use of chatbot","advantages of chatbot","application of chatbot","pratical use of chatbot","why should I use you","why to use you","what I will get out of","Pros of chatbot"],
-         "responses": ["I never get angry","I never get board","I save people's time","I can answer at odd times","you can ask same question again and again"]
-        },
-        {"tag": "disadvantageChatBot",
-         "patterns": ["tell me something bad about you","cases where chatbot fails","chatbot"],
-         "responses": ["I fail if not trained properly","Its diffcult for us to understand out of uncommon sentences","we reply quite similar answers"]
-        },
+
+
+		{
+			"tag": "owner",
+			"patterns": ["who made you", "who is your owner", "who are your makers", "who is your creater", "who created you", "manufactured", "who built you"],
+			"responses": ["I am outcome of graduate final project", "Preeti and Shabbir made me"]
+		},
+		{
+			"tag": "working",
+			"patterns": ["how are you able to answer", "how you work", "explain your working principle", "Mechanism of working", "Principle of working", "mode of exceution", "ways of answering", "what do you do", "how do you talk", "how you reply", "how you response", "your response time"],
+			"responses": ["I use neural network model", "we do semantic parsing", "Bag of word vector representation", "I am not rule based", "Feedforward Neural Network", "Compute intent then I answer"]
+		},
+		{
+			"tag": "personal_info",
+			"patterns": ["how old are you", "what is your birth date", "when your birthday comes", "what is your age", "age?", "date of birth"],
+			"responses": ["I am younger than you", "Just now I took the birth", "I am quite mature", "I am computer program"]
+		},
+		{
+			"tag": "talented",
+			"patterns": ["Are you talented", "How talented you are", "what questions you can answer", "you are expert in", "you domain", "your context",
+				"you are tranied in"
+			],
+			"responses": ["I am quite good with chatbot knowledge", "I have knowledge of NLP", "I have solid NLP background", "you talk about chatbot with me"]
+		},
+		{
+			"tag": "making",
+			"patterns": ["how to make chatbot", "what are your parts", "main components", "constituents"],
+			"responses": ["NLP knowledge", "Sentence Parsing", "Neural Network", "Intent finding", "Tensorflow library", "Json parser", "They coded me in python"]
+		},
+		{
+			"tag": "Speak",
+			"patterns": ["In which language you can talk", "how you talk", "how you speak", "you speak in", "which language you use", "medium of communication", "mode of interaction", "ways of talking", "can you speak"],
+			"responses": ["English", "Language which normal people speak", "I usually prefer simple sentences as i am in beta version", "I interact via console input"]
+		},
+		{
+			"tag": "Name",
+			"patterns": ["what is your name?", "name?", "How to call you?", "what to call you", "Hey I am", "your name?", "who are you?"],
+			"responses": ["Call me whatever you feel like", "you can call be chatbot"]
+		},
+		{
+			"tag": "information",
+			"patterns": ["where to get information about chatbot", "what is chatbot", "define chatbot", "create chatbot"],
+			"responses": ["https://www.tensorflow.org/", "http://www.natalieparde.com/teaching/cs421_fall2019.html", "computer program to whom you can ask"]
+		},
+		{
+			"tag": "factsChatBot",
+			"patterns": ["who invented chatbot", "First chatbot come in", "chatbot", "chat", "bot", "chatbot exits since", "name of first chatbot", "history of chatbot"],
+			"responses": ["Joseph Weizenbaum in 1960", "MIT professor in 1960", "ELIZA in 1960"]
+		},
+		{
+			"tag": "advantageChatBot",
+			"patterns": ["Use of chatbot", "advantages of chatbot", "application of chatbot", "pratical use of chatbot", "why should I use you", "why to use you", "what I will get out of", "Pros of chatbot"],
+			"responses": ["I never get angry", "I never get board", "I save people's time", "I can answer at odd times", "you can ask same question again and again"]
+		},
+		{
+			"tag": "disadvantageChatBot",
+			"patterns": ["tell me something bad about you", "cases where chatbot fails", "chatbot"],
+			"responses": ["I fail if not trained properly", "Its diffcult for us to understand out of uncommon sentences", "we reply quite similar answers"]
+		},
 		{
 			"tag": "quit",
 			"patterns": ["see you later", "bye", "see you soon", "talk to you later", "catch up later", "will meet again", "good bye", "will talk later", "nice meeting talking with you", "will catch you later", "quit", "byyee", "catch you later"],
 			"responses": ["Bye", "Have a nice day", "I enjoyed talking with you", "I hope you liked me", "If you like me please give me good grades", "I hope you like me, Expecting good grades.", "Good bye!", "See you soon."]
 		},
-		
-		
-		
+		{
+			"tag": "Initiate_talk",
+			"patterns": ["I'd like to talk about weather", "talk about weather", "discuss weather", "discuss about Cars", "I'd like to talk about cars", "talk about cars", "discuss about chatbot", "I'd like to talk about chatbot", "talk about chatbot"],
+			"responses": ["Yah, we can discuss about that", "Yes, go ahead, I'm trained to do that"]
+		},
+
+
 		{
 			"tag": "Weather",
-			"patterns": ["What's the weather Today?", "Are you aware of the weather today?", "Are you aware of weather now?", "Are you aware of the weather today?", "What's the weather Now?", "What is the weather prediction today?", "What is the weather prediction now?", "What's the weather Today?", "Are you aware of the weather today?", "Are you aware of weather now?", "Are you aware of the weather today?", "What's the weather Now?","weather","climate"],
+			"patterns": ["What's the weather Today?", "Are you aware of the weather today?", "Are you aware of weather now?", "Are you aware of the weather today?", "What's the weather Now?", "What is the weather prediction today?", "What is the weather prediction now?", "What's the weather Today?", "Are you aware of the weather today?", "Are you aware of weather now?", "Are you aware of the weather today?", "What's the weather Now?", "weather", "climate"],
 			"responses": ["According to Chicago's context, It is summer today! Jokes apart, it is -2deg Celsius", "it is -2deg Celsius out there.", "Today's prediction is Bright and sunny", "it is predicted to be Sunny and bright", "Layer up, it is -2 degree celsius"]
 		},
 		{
@@ -234,7 +249,7 @@
 		{
 			"patterns": ["What's the temperature Today?", "Are you aware of the temperature today?", "Are you aware of temperature now?", "Are you aware of the temperature today?", "What's the temperature Now?", "What is the weather prediction today?", "What is the temperature prediction now?", "What's the temperature Today?", "Are you aware of the temperature today?", "Are you aware of temperature now?", "Are you aware of the temperature today?", "What's the temperature Now?"],
 			"tag": "Temperature",
-			"responses": ["Temperature is -2deg Celsius", "it is -2deg Celsius out there.", "Today's prediction is -5 degree celsius", "Temperature is predicted to be 2 degree celsius", "Layer up, it is -2 degree celsius"]
+			"responses": ["Temperature is -2deg Celsius", "it is -2deg Celsius out there.", "Prediction is -5 degree celsius", "Temperature is predicted to be 2 degree celsius", "Layer up, it will be -2 degree celsius"]
 
 		},
 		{
@@ -244,13 +259,19 @@
 
 		},
 		{
+			"patterns": ["is it sunny?", "is it hot today?", "it seems hot, will there be heat stroke?", "hot now?", "hot tomorrow?"],
+			"tag": "Sun",
+			"responses": ["yes, It is Sunny", "It is Sunny but no showers predicted", "Sunny, no Strokes Predicted though"]
+
+		},
+		{
 			"patterns": ["is it cloudy?", "is it cloudy today?", "it seems cloudy, will there be shower?"],
 			"tag": "Cloud",
 			"responses": ["yes, It is cloudy", "It is cloudy but no showers predicted", "Cloudy, no showers Predicted though"]
 
 		},
 		{
-			"patterns": ["what is the season now?", "seasons", "season","is it summer","is it winter","is it fall", "when is summer"],
+			"patterns": ["what is the season now?", "seasons", "season", "is it summer", "is it winter", "is it fall", "when is summer"],
 			"tag": "Seasons",
 			"responses": ["It is winter", "We are in the end of fall and early winters", "It is chicago's Famous harsh winter."]
 
