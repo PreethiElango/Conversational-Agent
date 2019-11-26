@@ -1,12 +1,12 @@
 {
 	"intents": [{
 			"tag": "EconomicalCars",
-			"patterns": ["tell me some car which are in my budget", "cheap Car", "cheapest car", "affordable car", "low budget car", "lower end cars", "low maintaince car", "low cost cars", "economical cars"],
+			"patterns": ["tell me some car which are in my budget", "cheap Car", "cheapest car", "affordable car", "low budget car", "lower end cars", "low maintaince car", "low cost cars", "economical cars","which car is slowest?","which is slowest car?","slow car"],
 			"responses": [" Nissan Versa Note", "Ford Fiesta", "Toyota Yaris", "Kia Rio", "Mitsubishi Mirage", " Chevrolet Spark"]
 		},
 		{
 			"tag": "TopCars",
-			"patterns": ["affordable luxury car", "Top cars", "High class cars", "High end cars", "expensive Cars"],
+			"patterns": ["affordable luxury car", "Top cars", "High class cars", "High end cars", "expensive Cars","which car is fastest?","which is fastest car","Fast car"],
 			"responses": ["Audi A3", "Audi Q3", "Acura TLX", "Acura RDX", "BMW XI", "BMW 2 Series", "Buick Encore"]
 		},
 		{
